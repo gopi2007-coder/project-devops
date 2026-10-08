@@ -1,0 +1,14 @@
+/* Refined visual identity and contact/project treatments */
+.brand{display:flex;align-items:center;gap:10px;font-family:Manrope,Arial,sans-serif;letter-spacing:normal}
+.brand-mark{display:grid;place-items:center;width:35px;height:35px;border-radius:11px;background:var(--ink);color:var(--lime);font:600 14px "DM Mono",monospace;letter-spacing:-2px;transform:rotate(-7deg);box-shadow:4px 4px 0 var(--lime)}
+.brand-name{font-size:13px;font-weight:800;letter-spacing:-.04em;color:var(--ink)!important}
+.primary{box-shadow:4px 4px 0 var(--ink)}
+.identity-card{position:relative;overflow:hidden}
+.identity-card:after{content:"";position:absolute;width:230px;height:230px;border:1px solid #44534b;border-radius:50%;right:-105px;top:-92px}
+.monogram{position:relative;z-index:1;width:94px;height:94px;border-radius:29px 29px 29px 0;background:var(--lime);color:var(--ink);display:flex;align-items:center;justify-content:center;gap:2px;font:600 28px "DM Mono",monospace;letter-spacing:-8px;transform:rotate(-7deg);box-shadow:7px 7px 0 #5c8a17}
+.monogram span:last-of-type{transform:translateX(-3px)}
+.monogram i{position:absolute;right:13px;bottom:14px;width:8px;height:8px;background:var(--ink);border-radius:50%}
+.project{transition:transform .2s ease,box-shadow .2s ease}.project:hover{transform:translateY(-5px);box-shadow:0 11px 25px rgba(23,37,31,.12)}
+.project-link{display:inline-block;margin-top:19px;color:var(--ink);font:700 12px "DM Mono",monospace;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:3px}.project-link:hover{color:#5d7e1e;border-color:#5d7e1e}
+.contact-details{display:flex;gap:20px;flex-wrap:wrap;margin-top:22px}.contact-details a{font:600 13px "DM Mono",monospace;color:var(--ink);text-decoration:none}.contact-details a:hover{color:#719c1d}
+@media(max-width:700px){.brand-name{display:none}}
