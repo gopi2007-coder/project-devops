@@ -92,7 +92,7 @@ resource "aws_security_group" "devops_security_group" {
 resource "aws_instance" "devops_instance_1" {
   ami           = var.ami_id
   instance_type = var.instance_type
-  key_name ="webserverkey"
+  key_name ="devops-proo"
 
   subnet_id = aws_subnet.devops_subnet_1.id
 
@@ -119,7 +119,7 @@ resource "aws_instance" "devops_instance_1" {
 resource "aws_instance" "devops_instance_2" {
   ami           = var.ami_id
   instance_type = var.instance_type
-  key_name ="webserverkey"
+  key_name ="devops-proo"
 
   subnet_id = aws_subnet.devops_subnet_2.id
 
